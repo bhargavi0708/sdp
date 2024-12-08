@@ -1,0 +1,114 @@
+.tournaments-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tournaments-container h1 {
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.tournaments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+}
+
+.tournament-card {
+  padding: 20px;
+}
+
+.tournament-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.tournament-header h2 {
+  color: var(--lavender-dark);
+  font-size: 1.3em;
+}
+
+.tournament-status {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.tournament-status.ongoing {
+  background-color: var(--lavender-dark);
+  color: white;
+}
+
+.tournament-status.upcoming {
+  background-color: var(--warning-color);
+  color: var(--text-color);
+}
+
+.tournament-status.registration-open {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.tournament-round {
+  margin-bottom: 20px;
+}
+
+.tournament-round h3 {
+  color: var(--secondary-color);
+  margin-bottom: 15px;
+  font-size: 1.1em;
+}
+
+.matches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.match-item {
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.match-item:hover {
+  background-color: #f8f4fc;
+  border-left: 3px solid var(--lavender-dark);
+}
+
+.match-teams {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.match-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: var(--secondary-color);
+}
+
+.register-button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--lavender-dark);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.register-button:hover {
+  background-color: var(--lavender-light);
+} 

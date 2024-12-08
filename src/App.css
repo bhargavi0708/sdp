@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #e31837;  /* Red */
+  --secondary-color: #2c2c2c; /* Dark gray */
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --background-color: #f8f8f8;
+  --text-color: #1a1a1a;
+  --card-bg: #ffffff;
+  --header-bg: linear-gradient(135deg, #e31837, #9e0f22);
+}
+
+.App {
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #e31837;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

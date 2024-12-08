@@ -1,0 +1,58 @@
+s.player-stats-container {
+  padding: 20px;
+}
+
+.player-stats-container h1 {
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+.stats-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.player-card {
+  padding: 15px;
+}
+
+.player-info {
+  margin-bottom: 20px;
+}
+
+.player-info h3 {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.player-info p {
+  color: var(--secondary-color);
+}
+
+.stats-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+}
+
+.stat-label {
+  font-size: 0.9em;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.stat-value {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: var(--primary-color);
+} 

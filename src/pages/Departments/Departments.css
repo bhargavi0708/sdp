@@ -1,0 +1,129 @@
+.departments-container {
+  padding: 20px;
+}
+
+.departments-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.departments-header h1 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.departments-header p {
+  color: var(--secondary-color);
+  font-size: 1.1em;
+}
+
+.departments-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.department-card {
+  padding: 20px;
+}
+
+.department-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.department-header h2 {
+  color: #e31837;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.rank {
+  background-color: #e31837;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.department-card h3 {
+  color: var(--text-color);
+  font-size: 1em;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.achievement-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.achievement-value {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #e31837;
+  margin-bottom: 5px;
+}
+
+.achievement-label {
+  font-size: 0.85em;
+  color: var(--secondary-color);
+}
+
+.department-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.top-athletes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.detail-label {
+  color: var(--secondary-color);
+  font-size: 0.9em;
+}
+
+.detail-value {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.sports-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sport-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sport-tag {
+  background-color: rgba(227, 24, 55, 0.1);
+  color: #e31837;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 0.85em;
+  font-weight: 500;
+} 

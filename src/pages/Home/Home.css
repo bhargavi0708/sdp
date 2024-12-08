@@ -1,0 +1,271 @@
+.home-container {
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #e31837;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #e31837;
+  border-radius: 2px;
+}
+
+.sports-section {
+  margin-bottom: 60px;
+}
+
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 20px;
+}
+
+.sport-card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(227, 24, 55, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(227, 24, 55, 0.1);
+}
+
+.sport-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(227, 24, 55, 0.2);
+}
+
+.sport-image-container {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 3px solid #e31837;
+}
+
+.sport-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sport-card:hover .sport-image {
+  transform: scale(1.05);
+}
+
+.sport-content {
+  padding: 20px;
+  background: linear-gradient(to bottom, #fff, #fff9f9);
+}
+
+.sport-content h2 {
+  margin: 0 0 10px 0;
+  color: #e31837;
+  font-size: 1.5rem;
+}
+
+.sport-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.events-section {
+  margin-top: 60px;
+  padding: 40px 0;
+  background: linear-gradient(135deg, #fff5f5, #fff);
+  border-radius: 20px;
+  border: 1px solid rgba(227, 24, 55, 0.1);
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(227, 24, 55, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(227, 24, 55, 0.1);
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(227, 24, 55, 0.15);
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  border-bottom: 2px solid rgba(227, 24, 55, 0.1);
+  padding-bottom: 10px;
+}
+
+.event-header h3 {
+  font-size: 1.2rem;
+  color: #e31837;
+  margin: 0;
+}
+
+.event-sport {
+  background-color: #e31837;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(227, 24, 55, 0.2);
+}
+
+.event-details {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.event-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.event-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: #444;
+}
+
+.event-info i {
+  color: #e31837;
+  width: 16px;
+}
+
+.event-teams {
+  font-weight: 500;
+  color: #e31837;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(227, 24, 55, 0.1);
+  text-align: center;
+}
+
+.event-card:hover .event-sport {
+  background-color: #c41230;
+}
+
+.event-card:hover .event-info i {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .sports-grid, .events-grid {
+    grid-template-columns: 1fr;
+    padding: 15px;
+    gap: 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .event-card {
+    padding: 15px;
+  }
+
+  .sport-image-container {
+    height: 180px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sport-card, .event-card {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #e31837, #c41230);
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  margin: 40px -20px 40px -20px;
+  box-shadow: 0 4px 15px rgba(227, 24, 55, 0.2);
+  border-radius: 8px;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-top: 15px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+} 
